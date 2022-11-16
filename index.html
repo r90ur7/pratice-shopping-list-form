@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles\main.css" />
+    <script src="scripts/jquery-3.6.1.min.js"></script>
+    <title>Shopping-List</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="shopping-container">
+            <h2 class="shopping-title" >Shopping List</h2>
+            <form class="shopping-form">
+                <div class="shopping-form-inputs">
+                    <div class="shopping-form-item-wrapper">
+                        <label class="shopping-form-label" for="item-name">Item name</label>
+                        <input class="shopping-form-item-input" type="text" name="item-name" id="item-name" placeholder="text" />
+                    </div>
+                    <div class="shopping-form-quantity-wrapper">
+                        <button class="shopping-form-quantity-button shopping-form-decrement-button" type="button"></button>
+                        <input class="shopping-form-quantity-input" type="text" name="item-quantity" value="1" disabled/>
+                        <button class="shopping-form-quantity-button shopping-form-increment-button" type="button"></button>
+                    </div>
+                </div>
+
+                <button class="shopping-form-submit-button" type="submit">Add to list</button>
+            </form>
+            <div class="shopping-result">
+                <div class="shopping-result-head">
+                    <strong>item</strong>
+                    <strong>item-quantity</strong>
+                </div>
+                <ul class="shopping-items"></ul>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
