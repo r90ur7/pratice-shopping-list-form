@@ -1,0 +1,11 @@
+@import "global.css";
+@import "main.css";
+
+:root{
+    --white:#fff;
+    --gray-100:#e5e5e5;
+    --gray-300:#bdbdbd;
+    --gray-500:#333333;
+    --orange-300:#f6ad55;
+    --orange-500:#ed8936;
+}

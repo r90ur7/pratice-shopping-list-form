@@ -1,0 +1,18 @@
+.shopping-result{
+    max-width: 416px;
+}
+.shopping-result-head,
+.shopping-item{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 8px 16px;
+}
+.shopping-result-head{
+    background: var(--gray-100);
+}
+.shopping-items{
+    list-style: none;
+}
+.shopping-item:nth-child(even) {
+    background: var(--gray-100);
+}
